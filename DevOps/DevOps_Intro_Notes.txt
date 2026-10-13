@@ -247,3 +247,206 @@ Next ::::
 		
 		
 		--> DevOps Lifecycle :
+
+#########################
+Day - 2 | 13th Oct. 2026
+#########################
+
+	- Stages of DevOps :::
+	
+	
+			- Continuous Development :::
+			
+				- It is the capability of any Application Development Team to Continuously Develop code changes. 
+				- It is a process that is used to improve the Developers' productivity.
+			
+				Role of any Developers ?
+				
+					- Understand the Requirement and Create the Source Code - Java/.Net/Python
+			
+				Manual Activities :::
+				
+					- Build the Source Code
+						- Build is process of compiling the source code and create artifacts(Binaries: *.war.*.jar,*.exec,*.dll)
+					- Perform Unit Testing 
+					- Promote the Changes for further Testing Environments
+					- Notify the Testing Team through emails
+
+				Using DevOps Approach :
+				
+					Automate: 
+
+						- Build the Source Code
+							- Build is process of compiling the source code and create artifacts(Binaries: *.war.*.jar,*.exec,*.dll)
+						- Perform Unit Testing 
+						- Promote the Changes for further Testing Environments
+						- Notify the Testing Team through emails
+			
+					- Create the Source Code - Java/.Net/Python
+					- Save the Source Code in the Source Code Repositories(GitHub)			
+			
+				Tools :
+				
+					- IDE(Integrated Development Environment) --> Eclipse, Visual Studio, Visual Studion Code, Pycharm, IntelliJ
+					- Build Tool & Unit Testing Tools ( Maven, TestNG,...)
+					- Git, GitHub
+			
+		
+		- Continuous Integration :::
+		
+				- It is the capability of any Application Development Team to Continuously Integrate the source code changes for further testing.		
+		
+				Automate: 
+
+					- Build the Source Code
+						- Build is process of compiling the source code and create artifacts(Binaries: *.war.*.jar,*.exec,*.dll)
+					- Perform Unit Testing 
+					- Promote the Changes for further Testing Environments
+					- Notify the Testing Team through emails	
+			
+				Tools :
+					- IDE(Integrated Development Environment) --> Eclipse, Visual Studio, Visual Studion Code, Pycharm, IntelliJ
+					- Build Tool & Unit Testing Tools ( Maven, TestNG,...)
+					- Git, GitHub
+					- Docker, Ansible, Kubernetes
+					- Jenkins
+					
+		
+		- Continuous Testing :::
+		
+				- It is the capability of the Testing Team to Continuously Test the Changes 
+				- Test Cases/Test Scenarios - Test Reports 
+				
+				Tools :
+				
+					- TestNG, Selenium
+					- Jenkins 
+					
+					
+		- Continuous Delivery/Deployment :::
+
+			- Continuous Delivery ::
+			
+				-> Used to release the changes to Production Environment with manual approvals
+				-> This process expect manual intervension/approval for production releases 
+				-> During the process of application upgrade or downgrade, there might be application downtime
+				-> This is used for Monolith Application Architecture
+				
+			Eg.: 
+				--> Online Banking/Insurance/Logistic :::
+				
+					-->  Release Management Team :::
+							Release Window 	==> 4 - 6 Hrs ==> Non-Business Hours
+							
+							StakeHolder ==> Release the Changes to Prod  V1 --> V2 
+							
+										==> Fix / Revert the changes 
+
+									
+			- Continuous Deployment ::
+			
+				- It is the process to release the changes to production environment, without any manual intervension/Approvals..
+				- Never expects any manual approvals for Production Releases	
+				- During the process of application upgrade or downgrade, there is no downtime
+				- Zero Downtime can be achieved only with the Micro-Service based Application Architecture.
+				- Is the matured level of DevOps.		
+				- Shift Left Approach :::
+				
+					Dev----QA----UAT-----> prod 
+				
+			Eg.: 
+				--> Facebook/Netflix/amazon.com/Gmail
+				
+				
+			www.amazon.com ::: - 3-tier 
+			
+			Sign_Up --> Micro-Service1 --> Developer1 --> Unit Testing --> CI --> QA/UAT --> Release to Prod 
+			
+			Sign_In --> Micro-Service2
+			
+			Search --> Micro-Service3
+			
+			Add to Cart 
+			
+			Payment 
+			
+			Place Order 
+			
+			Confirm Order 
+			
+			Track 
+			
+			
+			- Tools :
+			
+				- Jenkins / gitlab-ci / github-actions /azure pipeline
+				- Ansible,Docker,Kubernetes
+				
+				
+			- CI/Cd(delivery) Pipeline 
+		
+			- CI/CD(Deployment) Pipeline
+		
+		
+		- Continuous Monitoring :::
+		
+			- To ensure business continuity.
+			- To ensure that the application and the Infra-Structure are up and running!
+		
+			- Production Support & Monitoring Team 
+			
+			
+			Infra-Structure Monitoring :::
+			
+				- Production Servers / Database / Network / Storage 
+					
+				Tools: 
+				
+					- Prometheus / Grafana / Dynatrace / Nagios / Splunk
+					- Alert Management
+						75% as a threshold limit
+			
+			Application Monitoring :::
+			
+				- Micro-Services --> Database calls
+					
+				Tools :
+				
+					- AppDynamics / DataDog
+			
+
+				- Jenkins 
+					
+			
+		Infra-Structure Management:
+		
+			- IAC - Infra-Structure As Code - Tools
+		
+			Infra-Structure Provisioning/Creating 	::: Terraform/CloudFormation/ARM
+			
+			Infra-Structure Configurations 			::: Ansible/Chef/Puppet
+			
+			
+			SDK : 
+				-> Python 
+				
+		DevOps Tools :
+		
+			Open-Source DevOps Tools :::
+			
+				git,github,jenkins,docker,kubernetes,ansible,terraform,promethes,grafana 
+			
+			
+			
+			Managed Services :::
+			
+				AWS 	--> Codebuild,CodeDeploy,CodePipeline
+				
+				Azure 	--> Azure DevOps Services 
+				
+				GCP 	--> G DevOps Services 
+		
+			
+Next :::
+
+	DevOps LifeCycle Pipeline 
